@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: black;
+    color: aliceblue;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.34);
+    position: fixed;
+    color: azure;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.for_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 0.5em;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 20px;
+}
+
+.logs {
+    text-align: right;
+    margin-right: 2em;
+}
+
+.logs ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.logs li {
+    font-size: 20px;
+    margin-left: 0.4em;
+}
+
+.logs li a {
+    color: azure;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logs li a:hover {
+    color: rgb(17, 45, 228);
+    transform: scale(1.1);
+}
+
+.back_img {
+    position: relative;
+}
+
+.back_img img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+.overlay-text h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.scroll-text {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 20px;
+}
