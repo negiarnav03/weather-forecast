@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Web</title>
     <link rel="stylesheet" href="file.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+
 </head>
 <body>
 
@@ -19,6 +22,9 @@
                     <li><a href="#">Contact</a> |</li>
                     <li><a href="#">Info</a> |</li>
                     <li><a href="#">News</a></li>
+                    <li>
+                        
+                    </li>
                 </ul>
             </div>
         </div>
@@ -28,20 +34,68 @@
     <div class="back_img">
         <img src="https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img here" >
         <div class="overlay-text">
-            <h1>Let's see how is today's weather.</h1>
+            <h1>Let's see how today's weather is...</h1>
             <p class="scroll-text">Scroll down &#8595;</p>
         </div>
     </div>
 
-
+    
     <!-- ... mid part of code ... -->
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder=" Enter city name" spellcheck="false">
+            <button><img src="https://img.icons8.com/sf-ultralight/25/search.png" alt="search"/></button>
+        </div>
 
-    <div class="mid_body">
-        <p>hello hi helloooo..</p>
-        <p>hello hi helloooo..</p>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="weather">
+            
+            <img src="https://img.icons8.com/color/48/rain--v1.png" class="weather-icon" alt="rain img"/>
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="https://img.icons8.com/color/48/dew-point.png" alt="humidity img"/>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <img src="https://img.icons8.com/fluency/48/wind.png" alt="wind img"/>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        
     </div>
 
-    
 
+
+
+    <!--footer-->
+    <footer>
+        <p> &copy; 2024 Weather. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/cookie.html">Cookie Policy</a>
+        </div>
+    </footer>
+
+    
+    <script src="code.js"></script>
 </body>
 </html>
